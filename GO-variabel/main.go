@@ -2,45 +2,48 @@ package main
 
 import "fmt"
 
-var x int = 1
-
-// y := 2 // Error, tidak bisa digunakan di luar fungsi
-
 func main() {
-	var myName string
-	myName = "Ahmad Muhbit"
-	var nickName = "Ubit"
+
+	var myBrother string
+	myBrother = "Poter"
+	var myName string = "John doe"
+	var nickName = "John"
 	myAge := 28
 
+	// default variabel
 	var a string
 	var b int
 	var c bool
 
-	var d, e, f, g = 1, 2, 3, "Hello World"
+	// deklarasi multiple variabel
+	var d, e, f, g = 1, 2, 3, "Hello World!"
 
+	// variabel dalam blok
 	var (
-		firsName string = "Ahmad"
-		lastName        = "Muhbit"
-		height   int    = 172
+		firstName string = "ivan"
+		lastName         = "satria"
+		height    int    = 176
 	)
 
 	fmt.Println(myName)
 	fmt.Println(nickName)
+	fmt.Println(myBrother)
 	fmt.Println(myAge)
 
-	fmt.Println(x)
-	// fmt.Println(y)
-
+	// default variabel
 	fmt.Println(a)
 	fmt.Println(b)
 	fmt.Println(c)
 
+	// deklarasi multiple variabel
 	fmt.Println(d)
 	fmt.Println(e)
 	fmt.Println(f)
 	fmt.Println(g)
 
-	fmt.Println(firsName)
+	// var dalam blok
+	fmt.Println(firstName)
 	fmt.Println(lastName)
 	fmt.Println(height)
+
 }
